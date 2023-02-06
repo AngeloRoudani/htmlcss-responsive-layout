@@ -16,12 +16,17 @@
 .container {
     max-width: 1170px;
     margin: auto;
-    font-size: 1,5rem;
 }
 
 .flex {
     display: flex;
 }
+
+.center {
+    text-align: center;
+}
+
+
 
 /*Debug*/
 
@@ -37,12 +42,17 @@
 
 .top {
     background-color: var(--primary-topblue);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
 }
 
 .content_logo, .links {
     background-color: var(--primary-ocrayellow);
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .top .flex {
@@ -50,12 +60,46 @@
     align-items: center;
 }
 
+/*Codice del "Demo"*/
+
+#demo .cards {
+    width: calc(100% - 1.5rem);
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--primary-lightcyan);
+    width: calc(100% - 1.5rem);
+    margin-top: 2rem;
+}
+
+.card div {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#demo .cards {
+    width: calc(100% - 1.5rem);
+    flex-direction: column;
+    align-items: center;
+}
+
+.bigger {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
 /*MEDIAQUERY*/
 
 @media screen and (min-width: 768px) {
     .top .container {
         max-width: 740px;
     }
+
 }
 
 @media screen and (min-width: 992px) {
