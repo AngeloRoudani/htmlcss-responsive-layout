@@ -99,6 +99,10 @@ html {
     border-radius: 20px;
 }
 
+.rounded-2 {
+    border-radius: 40px;
+}
+
 
 /*Debug*/
 
@@ -185,10 +189,27 @@ ul li a {
     background-color: var(--background-cardlilla);
 }
 
+.arrow {
+    background-color: var(--background-cardlilla);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.arrow i {
+    padding-top: 15px;
+}
+
+#planning img {
+    width: 80%;
+}
+
 #planning .white {
     width: 90%;
     margin: 3rem auto;
-    background-color: white;
+    background-color: var(--text-white);
+    text-align: center;
 }
 
 /*Codice dei Testimonials*/
@@ -234,15 +255,10 @@ ul li a {
     }
     #planning .container {
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
     }
     #planning .white, #planning .violet {
-        width: 50%;
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
-    #planning .white {
-        margin-top: 100px;
+        width: 100%;
     }
     .box_t2 {
         display: flex;
@@ -277,6 +293,37 @@ ul li a {
     }
     .left, .right {
         width: 50%;
+    }
+    #planning .container {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 5rem;
+    }
+    #planning .violet {
+        width: 50%;
+        margin: 80px 0 0 4rem;
+        text-align: left;
+    }
+    .violet h2 {
+        margin-bottom: 40px;
+    }
+    .violet img {
+        margin-bottom: 150px;
+    }
+    .violet p {
+        text-align: left;
+        padding-left: 0;
+    }
+    #planning .white {
+        margin-top: 100px;
+        width: 40%;
+        height: 50%;
+        margin: 200px auto 0 auto;
+    }
+    .violet, p {
+        padding-bottom: 0;
     }
 }
 
