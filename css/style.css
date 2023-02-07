@@ -59,6 +59,10 @@ html {
     padding-bottom: 2rem;
 }
 
+.wdt-70{
+    width: 70%;
+}
+
 .wdt-100 {
     width: 100%;
 }
@@ -71,19 +75,30 @@ html {
     color: black;
 }
 
+.text-blue {
+    color: var(--primary-topblue)
+}
+
 .btn {
     background-color: var(--text-white);
     border-radius: 1rem;
     padding: 10px 5px;
 }
 
+.btn-blue {
+    background-color: var(--primary-topblue);
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rounded {
+    border-radius: 20px;
+}
 
 
 /*Debug*/
 
-.debug_top {
-    height: 60px;
-}
 
 
 .debug-pd-t {
@@ -142,17 +157,29 @@ ul li a {
 }
 
 #demo .card {
-    background-color: var(--primary-lightcyan);
+    background-color: var(--secondary-lightcyan);
 }
 
 .bigger {
     flex-direction: column;
 }
 
+.card p {
+    line-height: 2rem;
+    padding: 2rem;
+}
+
+#demo img {
+    margin: 0 auto;
+}
+
+.font-3 {
+    font-size: 4rem;
+}
 /*Codice del "Planning"*/
 
 #planning {
-    background-color: var(--primary-cardlilla);
+    background-color: var(--background-cardlilla);
 }
 
 #planning .white {
@@ -162,6 +189,7 @@ ul li a {
 }
 
 /*Codice dei Testimonials*/
+
 #testimonials .container {
     flex-direction: column;
 }
@@ -188,6 +216,18 @@ ul li a {
     }
     #demo .bigger {
         width: calc((100% / 3 * 2) - 0.75rem);
+    }
+    #demo .left {
+        width: 100%;
+        text-align: left;
+    }
+    .btn-blue, .left h3 {
+        margin-left: 2rem;
+        margin-bottom: 0px;
+    }
+    #demo .demo-img {
+        width: 50%;
+        margin-left: 2rem;
     }
     #planning .container {
         display: flex;
