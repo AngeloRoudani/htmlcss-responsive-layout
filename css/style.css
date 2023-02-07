@@ -78,6 +78,14 @@ html {
     color: black;
 }
 
+.text-violet {
+    color: var(--background-cardlilla);
+}
+
+.text-grey {
+    color: grey;
+}
+
 .text-blue {
     color: var(--primary-topblue)
 }
@@ -93,6 +101,11 @@ html {
     padding: 0.5rem 3rem;
     text-decoration: none;
     font-weight: bold;
+}
+
+.btn-violet {
+    background-color: var(--background-cardlilla);
+    padding: padding: 0.5rem 3rem;;
 }
 
 .rounded {
@@ -245,6 +258,48 @@ ul li a {
     color: var(--background-cardlilla);
 }
 
+/* Codice del "benefit"*/
+
+#benefits {
+    background-color: #9792e4;
+}
+
+#benefits .title_b {
+    text-align: center;
+    margin: 3rem auto;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+#benefits .card h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+#benefits .container {
+    width: calc(100% - 1.5rem);
+    margin: auto;
+    flex-direction: column;
+}
+
+#benefits .card {
+    width: 100%;
+    margin: 2rem auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 0 ;
+}
+
+#benefits .btn {
+    margin-left: 2rem;
+}
+
+.pd-l-2 {
+    padding-left: 2rem;
+}
+
 /*MEDIAQUERY*/
 
 @media screen and (min-width: 768px) {
@@ -295,6 +350,13 @@ ul li a {
     .box_t2:first-child {
         width: 25%;
         padding-left: 1.5rem;
+    }
+    #benefits .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #benefits .card {
+        width: calc((100% / 2) - 3rem);
     }
 }
 
@@ -358,6 +420,9 @@ ul li a {
     .test_description {
 
         width: 80%;
+    }
+    #benefits .card {
+        width: calc((100% / 3) - 1.5rem);
     }
 }
 
